@@ -1,1 +1,55 @@
 This mod adds money, ec cards and automats to Minetest.
+
+crafts:
+**********
+_____
+|S|C| = Bankomat
+-----
+|S|G| = ec card
+-----
+|S|A| = Food Automat
+-----
+|S|B| = Tools Automat
+-----
+|S|I| = Ores Automat
+-----
+|S|1| = Money Automat
+-----
+S = Cobblestone
+C = Coallump
+G = Goldingot
+A = Apple
+B = Stoneaxe
+I = Steelingot
+1 = One currency
+
+functions:
+**********
+
+Bankomat:
+
+Pay in:
+Put money in slot and click pay in.
+
+Pay out:
+Keep slot empty and click Get... .
+
+Food-, Tools- and Ores Automat:
+Klick with currency on top of the automat to pay in.
+Put money into slot to pay in.
+Put ec card into slot to pay with account of ec cards owner.
+Klick button to pay item.
+If enoug money item is added to Players inventory.
+
+Money Automat:
+Put ec card into slot to load money to ec cards owners account.
+Klick Button to sell item.
+Item is taken from Players inventory.
+If ec card is in slot money is payed to owners account.
+If no ec card is in slot money is added to players inventory.
+
+Ec card:
+Craft ec card to get ec card with is bound to your account of money2.
+If you give ec card to friend, her can pay from your account(and pay in to your account).
+Put ec card into automat to pay with ec card.
+
