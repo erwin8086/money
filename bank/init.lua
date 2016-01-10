@@ -56,7 +56,7 @@ bank.add_money = function(count, pos, stack)
 	inm=inm+count
 	meta:set_int("currency", inm)
 	local formspec = meta:get_string("raw_formspec")
-	formspec = formspec.."label[0,0;Money:"..inm.."]"
+	formspec = formspec.."label[0,0;"..S("Money:")..inm.."]"
 	meta:set_string("formspec", formspec)
 	stack:take_item()
 	return stack
@@ -259,8 +259,8 @@ minetest.register_craft({
 
 minetest.register_chatcommand("get_ec", {
 	privs = {money_admin=true},
-	params = "<account>",
-	description = "Get a ec card for an account",
+	params = S("<account>"),
+	description = S("Get a ec card for an account"),
 	func = function(name, param)
 		if param=="" then
 			bank.print(name, S("Error you must specific an account"))

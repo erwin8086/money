@@ -92,7 +92,7 @@ minetest.register_node("automats:apple", {
 			end
 		end
 		local formspec = meta:get_string("raw_formspec")
-		formspec = formspec.."label[0,0;Money:"..meta:get_int("currency").."]"
+		formspec = formspec.."label[0,0;"..S("Money:")..meta:get_int("currency").."]"
 		meta:set_string("formspec",formspec)
 		inv:set_stack("ec",1,stack)
 	end,
@@ -186,7 +186,7 @@ minetest.register_node("automats:tools", {
 			end
 		end
 		local formspec = meta:get_string("raw_formspec")
-		formspec = formspec.."label[0,0;Money:"..meta:get_int("currency").."]"
+		formspec = formspec.."label[0,0;"..S("Money:")..meta:get_int("currency").."]"
 		meta:set_string("formspec",formspec)
 		inv:set_stack("ec",1,stack)
 	end,
@@ -274,7 +274,7 @@ minetest.register_node("automats:ores", {
 			end
 		end
 		local formspec = meta:get_string("raw_formspec")
-		formspec = formspec.."label[0,0;Money:"..meta:get_int("currency").."]"
+		formspec = formspec.."label[0,0;"..S("Money:")..meta:get_int("currency").."]"
 		meta:set_string("formspec",formspec)
 		inv:set_stack("ec",1,stack)
 	end,
